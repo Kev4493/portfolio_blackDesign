@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+// === ALL COLORS: ===
+:root {
+    --darkGrey: #202020;
+    --lightGrey: #272727;
+    --yellow: #FEDA4E;
+    --white: #FFFFFF;
+    --black: #000000;
+}

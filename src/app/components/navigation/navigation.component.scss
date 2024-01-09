@@ -1,0 +1,29 @@
+.navigation {
+    border: 1px solid white;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__main {
+    display: flex;
+}
+
+.navigation__mainLink {
+    text-decoration: none;
+    color: var(--white);
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
+
+.navigation__logoImage {
+    width: 50px;
+}
+
+.navigation__socialmediaCircleIcon {
+    width: 20px;
+}
