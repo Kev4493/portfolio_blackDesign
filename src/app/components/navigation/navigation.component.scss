@@ -1,10 +1,10 @@
 .navigation {
-    border: 1px solid white;
     position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12rem;
 }
 
 .navigation__main {
@@ -14,14 +14,40 @@
 .navigation__mainLink {
     text-decoration: none;
     color: var(--white);
+    position: relative;
 
     &:not(:last-child) {
         margin-right: 1rem;
     }
+
+    &:hover {
+        transition: all 225ms;
+        color: var(--yellow);
+        text-decoration: underline;
+    }
 }
+
 
 .navigation__logoImage {
     width: 50px;
+}
+
+.navigation__socialmedia {
+    display: flex;
+}
+
+.navigation__socialmediaCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
 }
 
 .navigation__socialmediaCircleIcon {
