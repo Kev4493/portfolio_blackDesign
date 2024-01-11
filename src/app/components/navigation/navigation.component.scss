@@ -2,9 +2,9 @@
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2rem 12rem;
+    padding: 2rem 0;
 }
 
 .navigation__main {
@@ -13,7 +13,7 @@
 
 .navigation__mainLink {
     text-decoration: none;
-    color: var(--white);
+    color: var(--textGrey);
     position: relative;
 
     &:not(:last-child) {
@@ -27,13 +27,19 @@
     }
 }
 
+.navigation__logo {
+    position: absolute;
+    left: 12rem;
+}
 
 .navigation__logoImage {
     width: 50px;
 }
 
 .navigation__socialmedia {
+    position: absolute;
     display: flex;
+    right: 12rem;
 }
 
 .navigation__socialmediaCircle {
