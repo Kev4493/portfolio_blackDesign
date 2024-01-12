@@ -1,7 +1,11 @@
-.home {
+.portfolio {
     background-color: var(--darkGrey);
     width: 100vw;
-    // height: 100vh;
+    padding: 0 12rem;
+}
+
+.home {
+    background-color: var(--darkGrey);
 }
 
 .home__greeting {
