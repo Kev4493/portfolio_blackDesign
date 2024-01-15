@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
+
+    @media (max-width: 425px) {
+        display: none;
+    }
 }
 
 .navigation__main {
@@ -30,6 +34,14 @@
 .navigation__logo {
     position: absolute;
     left: 12rem;
+
+    @media only screen and (max-width: 1440px) {
+        left: 6rem;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        left: 3rem;
+    }
 }
 
 .navigation__logoImage {
@@ -40,6 +52,20 @@
     position: absolute;
     display: flex;
     right: 12rem;
+
+    @media only screen and (max-width: 1440px) {
+        right: 6rem;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        right: 3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        top: 2rem;
+        row-gap: 1rem;
+    }
 }
 
 .navigation__socialmediaCircle {
@@ -58,4 +84,41 @@
 
 .navigation__socialmediaCircleIcon {
     width: 20px;
+}
+
+// === MOBILENAVIGATION ===
+
+@media only screen and (min-width: 425px) {}
+
+.mobileNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    background-color: var(--lightGrey);
+
+    @media only screen and (min-width: 426px) {
+        display: none;
+    }
+}
+
+.mobileNavigation__logo {
+    width: 100%;
+}
+
+.mobileNavigation__logoImage {
+    width: 35px;
+    cursor: pointer;
+}
+
+.mobileNavigation__menu {
+
+}
+
+.mobileNavigation__menuIcon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
