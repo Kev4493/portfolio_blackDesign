@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })
+
 export class NavigationComponent {
 
+  showMobileNavigationLinks() {
+    let mobileNavigation = document.querySelector('.js-mobileNav');
+    mobileNavigation.classList.toggle('show-nav');
+  }
+
 }
+

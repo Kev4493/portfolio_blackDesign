@@ -98,6 +98,8 @@
     width: 100%;
     position: absolute;
     background-color: var(--lightGrey);
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 2;
 
     @media only screen and (min-width: 426px) {
         display: none;
@@ -113,12 +115,34 @@
     cursor: pointer;
 }
 
-.mobileNavigation__menu {
-
-}
-
 .mobileNavigation__menuIcon {
     width: 35px;
     height: 35px;
     cursor: pointer;
+}
+
+.mobileNavigation__links {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // background-color: var(--lightGrey);
+    background-color: grey;
+    position: absolute;
+    top: 71.5px;
+    left: 0;
+    right: 0;
+    row-gap: 1rem;
+    transition: transform 500ms ease-out;
+    transform: translateY(-204px);
+}
+
+.mobileNavigation__mainLink {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.show-nav {
+    transition: all 500ms ease-out;
+    transform: translateY(0);
 }
