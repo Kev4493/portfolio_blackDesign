@@ -28,6 +28,10 @@
     flex-wrap: wrap;
     gap: 4rem;
     max-width: 800px;
+
+    @media (max-width: 768px) {
+        gap: 2rem;
+    }
 }
 
 .skills__techstackSingle {
@@ -38,12 +42,29 @@
     background-color: var(--yellow);
     padding: 2rem;
     border-radius: 12px;
-    width: 210px;
+    width: 200px;
+    height: 200px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 1rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    @media only screen and (max-width: 375px) {
+        width: 130px;
+        height: 160px;
+    }
 }
 
 .skills__techstackSingleIcon {
     width: 75px;
     height: 75px;
+
+    @media only screen and (max-width: 768px) {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .skills__techstackSingleTitle {
@@ -51,4 +72,5 @@
     margin-top: 2rem;
     font-weight: 700;
     color: var(--lightGrey);
+    text-align: center;
 }
