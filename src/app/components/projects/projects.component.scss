@@ -1,0 +1,50 @@
+.projects__headline {
+    width: 100%;
+}
+
+.projects__list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.projects__listSingle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projects__listSingleImage {
+    border-radius: 12px;
+    width: 700px;
+}
+
+.projects__listSingleDescription {
+    // border: 1px solid white;
+    max-width: 400px;
+    ;
+}
+
+.projects__listSingleDescriptionTitle {
+    color: var(--yellow);
+    font-family: 'Genos';
+}
+
+.projects__listSingleDescriptionInstruction {
+    color: var(--textGrey);
+    font-family: 'Genos';
+    margin-top: 1rem;
+}
+
+.projects__listSingleDescriptionTechnology {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.projects__listSingleDescriptionTechnologyInner {
+    color: var(--yellow);
+    font-family: 'Genos';
+}

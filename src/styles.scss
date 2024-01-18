@@ -109,8 +109,8 @@ body {
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-// === MAIN PADDING ===
-.main--padding {
+// === MAIN CONTAINER ===
+.mainContainer {
     padding: 0 12rem;
 
     @media only screen and (max-width: 1440px) {
@@ -124,4 +124,16 @@ body {
     @media only screen and (max-width: 425px) {
         padding: 0 1rem;
     }
+}
+
+// === SECTION-HEADLINES ===
+
+.sectionHeadline {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-family: 'Genos';
 }
