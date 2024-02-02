@@ -3,10 +3,10 @@
 }
 
 .projects__list {
-    margin-top: 2rem;
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 4rem;
 }
 
 .projects__listSingle {
@@ -16,6 +16,7 @@
     background-color: var(--lightGrey);
     padding: 2rem 1rem;
     border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .projects__listSingleImage {
@@ -63,4 +64,9 @@
     background-color: var(--yellow);
     color: var(--darkGrey);
     border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e7b800;
+    }
 }
