@@ -1,5 +1,4 @@
 .about {
-    width: 100%;
     background-color: var(--lightGrey);
     display: flex;
     flex-direction: column;
@@ -9,4 +8,51 @@
 
 .about__profile {
     display: flex;
+    justify-content: center;
+    margin: 2rem 0rem;
 }
+
+.about__profileLeft {
+    margin-right: 4rem;
+}
+
+.about__profileLeftPicture {
+    img {
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 2rem;
+    }
+}
+
+.about__profileName {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+    p {
+        letter-spacing: 1px;
+        color: var(--white);
+    }
+}
+
+.about__ProfileSocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.about__profileRight {
+    display: flex;
+    justify-content: center;
+    // border: 1px solid white;
+    width: 800px;
+
+    p {
+        color: var(--textGrey);
+        font-family: "Genos";
+    }
+}
+   
