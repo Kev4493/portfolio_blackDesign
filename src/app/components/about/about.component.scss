@@ -9,7 +9,6 @@
 .about__profile {
     display: flex;
     justify-content: center;
-    margin: 2rem 0rem;
     width: 100%;
 
     @media only screen and (max-width: 768px) {
@@ -61,7 +60,6 @@
 
     p {
         color: var(--textGrey);
-        font-family: "Genos";
     }
 
     @media only screen and (max-width: 768px) {

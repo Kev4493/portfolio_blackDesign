@@ -4,21 +4,8 @@
 }
 
 body {
-    // font-family: 'Genos';
-    // font-family: 'Heebo';
-    // font-family: 'Cabin';
     font-family: 'Noto Sans';
     overflow-x: hidden;
-}
-
-// === ALL COLORS: ===
-:root {
-    --darkGrey: #202020;
-    --lightGrey: #272727;
-    --yellow: #feda4e;
-    --white: #FFFFFF;
-    --black: #000000;
-    --textGrey: #A2A2A2;
 }
 
 /* genos-regular - latin */
@@ -109,21 +96,78 @@ body {
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/assets/fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../src/assets/fonts/montserrat-v26-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+// === ALL COLORS: ===
+
+:root {
+    --darkGrey: #202020;
+    --lightGrey: #272727;
+    --yellow: #feda4e;
+    --white: #FFFFFF;
+    --black: #000000;
+    --textGrey: #A2A2A2;
+}
+
 // === MAIN CONTAINER ===
+
 .mainContainer {
-    padding: 0 15rem;
+    padding: 4rem 15rem;
+
+    @media only screen and (min-width: 2560px) {
+        padding: 4rem 25rem;
+    }
 
     @media only screen and (max-width: 1440px) {
-        padding: 0 6rem;
+        padding: 4rem 6rem;
     }
 
     @media only screen and (max-width: 1024px) {
-        padding: 0 3rem;
+        padding: 4rem 3rem;
     }
 
     @media only screen and (max-width: 425px) {
-        padding: 0 1rem;
+        padding: 4rem 1rem;
     }
+}
+
+// === FONT SIZE ===
+
+.size--headline {
+    font-family: 'Montserrat';
+    font-size: 32px;
+    margin-bottom: 4rem;
+}
+
+.size--subHeadline {
+    font-family: 'Montserrat';
+    font-size: 24px;
+}
+
+.size--text {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.6em;
 }
 
 // === SECTION-HEADLINES ===
@@ -134,8 +178,6 @@ body {
     color: var(--white);
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin-top: 2rem;
-    font-family: 'Genos';
 }
 
 // === SOCIAL-MEDIA-ICONS ===
@@ -148,6 +190,10 @@ body {
     border-radius: 50%;
     width: 30px;
     height: 30px;
+
+    a {
+        display: flex;
+    }
 
     &:not(:last-child) {
         margin-right: 1rem;

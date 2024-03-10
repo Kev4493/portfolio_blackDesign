@@ -26,7 +26,11 @@
 .projects__listSingleImage {
     width: 500px;
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (min-width: 2560px) {
+        width: 800px;
+    }
+
+    @media only screen and (max-width: 1440px) {
         width: 600px;
     }
 
@@ -37,6 +41,7 @@
 
 .projects__listSingleDescription {
     max-width: 400px;
+    margin-left: 2rem;
 
     @media only screen and (max-width: 1440px) {
         max-width: 300px;
@@ -52,12 +57,10 @@
 
 .projects__listSingleDescriptionTitle {
     color: var(--yellow);
-    font-family: 'Genos';
 }
 
 .projects__listSingleDescriptionInstruction {
     color: var(--textGrey);
-    font-family: 'Genos';
     margin-top: 1rem;
 }
 
@@ -70,7 +73,6 @@
 
 .projects__listSingleDescriptionTechnologyInner {
     color: var(--white);
-    font-family: 'Genos';
 }
 
 .projects__listSingleDescriptionTechnologyButtonbox {

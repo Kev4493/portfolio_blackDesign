@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
 
     @media (max-width: 768px) {
         display: none;
@@ -33,7 +32,11 @@
 
 .navigation__logo {
     position: absolute;
-    left: 12rem;
+    left: 15rem;
+
+    @media only screen and (min-width: 2560px) {
+        left: 25rem;
+    }
 
     @media only screen and (max-width: 1440px) {
         left: 6rem;
@@ -51,7 +54,11 @@
 .navigation__socialmedia {
     position: absolute;
     display: flex;
-    right: 12rem;
+    right: 15rem;
+
+    @media only screen and (min-width: 2560px) {
+        right: 25rem;
+    }
 
     @media only screen and (max-width: 1440px) {
         right: 6rem;
