@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--lightGrey);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 435px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.footer__copyright {
+    color: var(--yellow);
+
+    @media only screen and (max-width: 435px) {
+        margin-top: 2rem;
+    }
+}
+
+.footer__legalNotice {
+    color: var(--textGrey);
+    text-decoration: none;
+
+    &:hover {
+        transition: all 225ms;
+        color: var(--yellow);
+        text-decoration: underline;
+    }
+}
