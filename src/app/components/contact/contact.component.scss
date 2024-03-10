@@ -77,41 +77,44 @@
 
         input {
             padding: 8px 8px 8px 12px;
-            background-color: var(--yellow);
+            background-color: var(--lightGrey);
             border: none;
             font-family: Arial, sans-serif;
             border-radius: 6px;
 
             &::placeholder {
-                color: var(--darkGrey);
+                color: var(--textGrey);
             }
         }
 
         textarea {
-            background-color: var(--yellow);
+            background-color: var(--lightGrey);
             padding: 8px 8px 8px 12px;
             font-family: Arial, sans-serif;
             border: none;
             border-radius: 6px;
 
             &::placeholder {
-                color: var(--darkGrey);
+                color: var(--textGrey);
             }
         }
 
         button {
             padding: 16px;
-            background-color: var(--yellow);
+            background-color: var(--lightGrey);
             border: none;
             border-radius: 6px;
 
             &:hover {
-                background-color: #e7b800;
+                background-color: var(--yellow);
+                p {
+                    color: var(--darkGrey);
+                }
             }
 
             p {
                 text-transform: uppercase;
-                color: var(--black);
+                color: var(--textGrey);
             }
         }
     }
