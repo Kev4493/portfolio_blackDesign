@@ -1,5 +1,5 @@
 <div class="footer mainContainer">
     <p class="footer__copyright size--text">© Kevin Wagner 2024</p>
 
-    <a class="footer__legalNotice size--text" href="#">Legal Notice - Imprint</a>
+    <a *ngIf="router.url !== '/imprint'" class="footer__legalNotice size--text" href="#">Legal Notice - Imprint</a>
 </div>
