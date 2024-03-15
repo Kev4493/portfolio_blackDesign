@@ -8,14 +8,16 @@
     @media only screen and (max-width: 435px) {
         flex-direction: column-reverse;
         align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
 .footer__copyright {
     color: var(--yellow);
 
-    @media only screen and (max-width: 435px) {
-        margin-top: 2rem;
+    @media only screen and (max-width: 425px) {
+        margin-top: 1rem;
     }
 }
 

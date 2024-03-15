@@ -51,9 +51,9 @@
         margin-right: 1rem;
     }
 
-    p {
+    .contacts__containerLeftSocialMailLink {
         color: var(--yellow);
-        ;
+        text-decoration: none;
     }
 }
 
@@ -83,6 +83,7 @@
             border: none;
             font-family: Arial, sans-serif;
             border-radius: 6px;
+            color: var(--textGrey);
 
             &::placeholder {
                 color: var(--textGrey);
@@ -95,6 +96,7 @@
             font-family: Arial, sans-serif;
             border: none;
             border-radius: 6px;
+            color: var(--textGrey);
 
             &::placeholder {
                 color: var(--textGrey);
