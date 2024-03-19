@@ -42,15 +42,6 @@
     margin-top: 2rem;
     position: relative;
 
-    @media only screen and (max-width: 768px) {
-        font-size: 1rem;
-        margin-top: 0;
-    }
-
-    @media only screen and (max-width: 375px) {
-        font-size: 0.7rem;
-    }
-
     &::before {
         content: "";
         right: -8px;
@@ -61,6 +52,25 @@
         background-color: var(--yellow);
         transform: translateY(-45%);
         animation: blink 0.9s infinite;
+
+        @media only screen and (max-width: 768px) {
+            height: 25px;
+        }
+
+        @media only screen and (max-width: 375px) {
+            height: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        min-height: 22px;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    @media only screen and (max-width: 375px) {
+        min-height: 15px;
+        font-size: 0.7rem;
     }
 }
 
@@ -95,4 +105,47 @@
     @media only screen and (max-width: 320px) {
         letter-spacing: 3px;
     }
+}
+
+.home__scrollmouse {
+    position: absolute;
+    bottom: 0;
+    right: 15rem;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(176deg, rgba(0, 0, 0, 0) 0%, rgba(234, 207, 3, .722) 54%, rgba(0, 0, 0, 0) 100%);;
+    transition: all .58s ease-in-out;
+    animation: changeHeight 2s infinite linear alternate-reverse;
+
+
+    @media only screen and (max-width: 1440px) {
+        right: 6rem;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        right: 3rem;
+    }
+
+    @media only screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+
+@keyframes changeHeight {
+    0% {
+        height: 50px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+.scrollMouse {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
 }
