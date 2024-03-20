@@ -1,16 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { SkillsComponent } from "../skills/skills.component";
 import { ProjectsComponent } from "../projects/projects.component";
 import { AboutComponent } from "../about/about.component";
 import { ContactComponent } from "../contact/contact.component";
 import { FooterComponent } from "../footer/footer.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.scss',
-    imports: [SkillsComponent, ProjectsComponent, AboutComponent, ContactComponent, FooterComponent]
+    imports: [SkillsComponent, ProjectsComponent, AboutComponent, ContactComponent, FooterComponent, CommonModule]
 })
 export class HomeComponent {
 
@@ -45,10 +46,18 @@ export class HomeComponent {
                 wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
                 setTimeout(typeEffect, 1200);
             }
-
         }
 
         typeEffect();
+    }
+
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+      if (window.scrollY > 0) {
+        document.querySelector('.js-home__scrollmouse').classList.add('fade-out'); // Fügen Sie diese Zeile hinzu
+      } else {
+        document.querySelector('.js-home__scrollmouse').classList.remove('fade-out'); // Fügen Sie diese Zeile hinzu
+      }
     }
 
 
