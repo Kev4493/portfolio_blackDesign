@@ -9,6 +9,7 @@
 .about__profile {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 
     @media only screen and (max-width: 768px) {
@@ -29,11 +30,15 @@
 .about__profileLeftPicture {
     img {
         border-radius: 50%;
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         object-position: top;
-        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 1024px) {
+            width: 200px;
+            height: 200px;
+        }
     }
 }
 
